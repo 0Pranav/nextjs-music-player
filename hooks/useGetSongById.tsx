@@ -19,6 +19,7 @@ const useGetSongById = (id?: string) => {
                 .from('songs')
                 .select('*')
                 .eq('id', id)
+                .single()
 
             if (error) {
                 setIsLoading(false)
