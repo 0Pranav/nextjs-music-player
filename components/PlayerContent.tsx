@@ -1,6 +1,6 @@
 "use client"
 import { Song } from "@/types"
-import { FC, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import MediaItem from "./MediaItem"
 import LikeButton from "./LikeButton"
 import { BsPauseFill, BsPlayFill } from "react-icons/bs"
@@ -19,13 +19,12 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
     // hooks
     const player = usePlayer()
 
-
     // states
     const [volume, setVolume] = useState(1);
     const [isPlaying, setIsPlaying] = useState(false);
 
     // Icons
-    const Icon = true ? BsPauseFill : BsPlayFill
+    const Icon = isPlaying ? BsPauseFill : BsPlayFill
     const VolumeIcon = volume === 0 ? HiSpeakerXMark : HiSpeakerWave;
 
     const onPlayNext = () => {
