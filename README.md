@@ -1,6 +1,8 @@
 # NextJS Music Player
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![Screenshot Music Player](assets/music-player.png)
+
 ## Key Features
 - Full responsiveness for all devices
 - Credential authentication with Supabase
@@ -14,5 +16,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Advanced Player component
 - Stripe recurring payment integration
 - Handling relations between Server and Child components in a real-time environment
-
 
